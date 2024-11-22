@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pay Now</h1>
+    <form action="stk_push/" method="post">
+        {% csrf_token %}
+        <input type="text" name="phone_number", placeholder="Enter number: 254..."><br><br>
+        <input type="number" name="amount", placeholder="Enter amount"><br><br>
+        <input type="submit" value="Pay Now">
+    </form>
+</body>
+</html>
